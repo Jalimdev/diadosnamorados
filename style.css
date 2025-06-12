@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.imgur.com/9PCZz7I.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Cursive', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20vh;
+  background: rgba(255, 105, 180, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.mensagem-secreta {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #fff0f5;
+  display: none;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Corações caindo */
+body::after {
+  content: "💖 💕 💗 💘 💝 💞";
+  font-size: 3rem;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: hearts 20s linear infinite;
+}
+
+@keyframes hearts {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
